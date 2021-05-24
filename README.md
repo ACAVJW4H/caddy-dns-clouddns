@@ -18,7 +18,7 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
   "challenges": {
     "dns": {
       "provider": {
-        "name": "clouddns"
+        "name": "clouddns",
         "json_key_file": "path to json key file",
         "project": "project name"
       }
@@ -32,7 +32,7 @@ or with the Caddyfile:
 ```
 # globally
 {
-	acme_dns clouddns {
+  acme_dns clouddns {
     json_key_file {env.GOOGLE_APPLICATION_CREDENTIALS}
     project {env.PROJECT_ID}
   }
@@ -42,7 +42,7 @@ or with the Caddyfile:
 ```
 # one site
 tls {
-	dns clouddns {
+  dns clouddns {
     json_key_file {env.GOOGLE_APPLICATION_CREDENTIALS}
     project {env.PROJECT_ID}
   }

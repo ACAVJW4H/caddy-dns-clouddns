@@ -1,4 +1,4 @@
-module github.com/aputs/caddy-dns-clouddns
+module github.com/ACAVJW4H/caddy-dns-clouddns
 
 go 1.16
 
